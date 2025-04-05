@@ -6,7 +6,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_KEY = os.getenv("OPENROUTER_API_KEY")  # Ensure your .env contains this
+API_KEY = "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"  # <-- paste your working OpenRouter key here
+print("Loaded API Key:", API_KEY)
 HEADERS = {
     "Authorization": f"Bearer {API_KEY}",
     "Content-Type": "application/json"
